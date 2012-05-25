@@ -2,7 +2,7 @@ LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 LOCAL_LDLIBS := -llog
 	
-LOCAL_PREBUILT_OBJ_FILES += \
+LOCAL_PREBUILT_OBJ_FILES := \
 	VbrTag.o \
 	bitstream.o \
 	encoder.o \
@@ -25,6 +25,8 @@ LOCAL_PREBUILT_OBJ_FILES += \
 	version.o
 	
 common_COPY_HEADERS_TO := liblame
+common_COPY_HEADERS := \
+	lame.h \
 
 LOCAL_MODULE    := liblame
 LOCAL_MODULE_TAGS := optional
