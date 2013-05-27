@@ -2,27 +2,26 @@ LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 LOCAL_LDLIBS := -llog
 	
-LOCAL_PREBUILT_OBJ_FILES := \
-	VbrTag.o \
-	bitstream.o \
-	encoder.o \
-	fft.o \
-	gain_analysis.o \
-	id3tag.o \
-	lame.o \
-	mpglib_interface.o \
-	newmdct.o \
-	presets.o \
-	psymodel.o \
-	quantize.o \
-	quantize_pvt.o \
-	reservoir.o \
-	set_get.o \
-	tables.o \
-	takehiro.o \
-	util.o \
-	vbrquantize.o \
-	version.o
+LOCAL_SRC_FILES := VbrTag.c \
+	bitstream.c \
+	encoder.c \
+	fft.c \
+	gain_analysis.c \
+	id3tag.c \
+	lame.c \
+	mpglib_interface.c \
+	newmdct.c \
+	presets.c \
+	psymodel.c \
+	quantize.c \
+	quantize_pvt.c \
+	reservoir.c \
+	set_get.c \
+	tables.c \
+	takehiro.c \
+	util.c \
+	vbrquantize.c \
+	version.c  
 	
 common_COPY_HEADERS_TO := liblame
 common_COPY_HEADERS := \
